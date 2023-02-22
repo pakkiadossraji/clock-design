@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock-Animation</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    
+    <div class="outer-div">
+     <span class="twelve dotted"></span><br>
+     <span class="three dotted"></span><br>
+     <span class="six dotted"></span><br>
+     <span class="nine dotted"></span>
+     <span class="center dotted"></span>
+     <div class="big-div"></div>
+    <div class="small-div"></div>
+    <div class="hour-div"></div>
+    </div>
+    
+    <script>
+         setInterval(function(){
+             var date = new Date;
+                var seconds = date.getSeconds();
+                
+                var minutes = date.getMinutes();
+                var hours = date.getHours();
+                console.log(hours)
+        var angle=`translate(69px, -44px)rotate(${(seconds*6)-90}deg)`;
+            //   console.log(seconds,"sec")
+            document.querySelector(".big-div").style.transform=angle;
+       
+        var direction =`translate(-26px, -49px)rotate(${(minutes*6)+90}deg)`;
+            console.log(minutes,direction,"min")
+            document.querySelector(".small-div").style.transform=direction;
+        
+        var time = `translate(70px, -53px)rotate(${(hours*30)-90}deg)`;
+        console.log(hours,time,"hrs")
+            document.querySelector(".hour-div").style.transform=time;
+
+        }, 1000)
+        
+        
+        </script>
+        
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+.outer-div{
+    border: 10px solid orange;
+    border-radius: 50%;
+    box-shadow: inset  rgba(149, 157, 165, 0.5) 3px 10px 24px;
+    background: #fefbf2;
+    width: 140px;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 133px;
+}
+.dotted{
+    border: 2px solid black;
+    width: 2.5px;
+    padding: 2px;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    height: 2px;
+}
+.center{
+    background-color: orange;
+    width: 11px ;
+    height: 11px;
+    border: 1px solid orange;
+    position: relative;
+    bottom: 35px;
+    margin: 0 auto;
+    z-index: 100;
+}
+.twelve{
+    position: relative;
+    bottom: 48px;
+    left: 65px;
+}
+.three{
+    position: relative;
+    left: 180px;
+    top: 38px;
+}
+.six{
+    position: relative;
+    left: 67px;
+    top: 115px
+}
+.nine{
+    position: relative;
+    right: 47px;
+    bottom: 21px;
+    
+}
+.big-div{
+   
+    width: 80px;
+    height: 2px;
+    background: red;
+    transform: translate(70px, -44px);
+    transform-origin: left;
+}
+.small-div{
+    width: 100px;
+    height: 5px;
+    background: black;
+    transform: translate(-26px, -49px);
+    transform-origin: right;
+   
+}
+.hour-div{
+    width: 50px;
+    height: 5px;
+    background: black;
+    transform: translate(70px, -53px);
+    transform-origin: left;
+}
+
+
+
